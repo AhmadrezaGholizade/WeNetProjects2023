@@ -16,8 +16,6 @@ namespace Project5
         public Form1()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
