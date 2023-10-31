@@ -1,0 +1,46 @@
+img{
+    margin-top: 20px;
+    width: 90%
+}
+input{
+    width: 100%;
+    text-align:center;
+    margin-top: 2px;
+    color: purple;
+    border-radius: 5px;
+}
+body{
+    font-family: 'Comic Neue', cursive;
+    background-image: url('img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    height: 100vh;
+}
+#sub{
+    width: 100%;
+    margin-top: 8px;
+    background-color: rgb(56, 149, 12);
+    border: none;
+}
+#sub:hover{
+    background-color: rgb(26, 78, 2);
+}
+select{
+    margin-top: 2px;
+    width: 100%;
+    text-align:center;
+    height: 28px;
+    color: purple;
+    border-radius: 5px;
+}
+#form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
+    margin-top: 7%;
+    background-color: rgba(207, 146, 207, 0.5);
+    padding: 1% 2%;
+    border: 10px solid rgb(207, 146, 207);
+    border-radius: 25px;
+}
