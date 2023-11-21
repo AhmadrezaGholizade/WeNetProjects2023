@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetNearestArchitecturalFirm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNearestArchitecturalFirmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNearestArchitecturalFirmResult" type="tns:architectural_firms" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="architectural_firms">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="X" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Y" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Founder" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Projects" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactInfo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetNearestArchitecturalFirmSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNearestArchitecturalFirm" />
+  </wsdl:message>
+  <wsdl:message name="GetNearestArchitecturalFirmSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNearestArchitecturalFirmResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ArchitecturalFirmsWebServiceSoap">
+    <wsdl:operation name="GetNearestArchitecturalFirm">
+      <wsdl:input message="tns:GetNearestArchitecturalFirmSoapIn" />
+      <wsdl:output message="tns:GetNearestArchitecturalFirmSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ArchitecturalFirmsWebServiceSoap" type="tns:ArchitecturalFirmsWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNearestArchitecturalFirm">
+      <soap:operation soapAction="http://tempuri.org/GetNearestArchitecturalFirm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ArchitecturalFirmsWebServiceSoap12" type="tns:ArchitecturalFirmsWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNearestArchitecturalFirm">
+      <soap12:operation soapAction="http://tempuri.org/GetNearestArchitecturalFirm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ArchitecturalFirmsWebService">
+    <wsdl:port name="ArchitecturalFirmsWebServiceSoap" binding="tns:ArchitecturalFirmsWebServiceSoap">
+      <soap:address location="http://localhost/Project_8/ArchitecturalFirmsWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ArchitecturalFirmsWebServiceSoap12" binding="tns:ArchitecturalFirmsWebServiceSoap12">
+      <soap12:address location="http://localhost/Project_8/ArchitecturalFirmsWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

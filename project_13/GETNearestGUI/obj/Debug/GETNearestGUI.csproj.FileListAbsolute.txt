@@ -1,0 +1,10 @@
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\bin\Debug\GETNearestGUI.exe.config
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\bin\Debug\GETNearestGUI.exe
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\bin\Debug\GETNearestGUI.pdb
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.csproj.AssemblyReference.cache
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.Properties.Resources.resources
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.csproj.GenerateResource.cache
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.csproj.CoreCompileInputs.cache
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.exe
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.pdb
+D:\uniArshad\Net\projects\project_13\GETNearestGUI\obj\Debug\GETNearestGUI.GUI.resources
