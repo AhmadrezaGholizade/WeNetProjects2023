@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Distance Form</title>
+    <link rel="icon" type="image/png" href="assets/icon/nodes.png">
+    <link rel="stylesheet" href="assets/css/distance_sheet.css">
+    <script src="assets/js/lineClass.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>
+            GET-DISTANCE-FORM
+            <img id="img" src="assets/icon/nodes_white.png">
+        </h1>
+        <ul>
+            <form onsubmit="Calculate_dis(event)">
+                <li> 
+                    X1: <input name="X1" type="text" placeholder="Add X1" required autocomplete="off" pattern="[1-9][0-9]*(\.[0-9]+)?">
+                </li>
+                <li> 
+                    Y1: <input name="Y1" type="text" placeholder="Add Y1" required autocomplete="off" pattern="[1-9][0-9]*(\.[0-9]+)?">
+                </li>
+                <li> 
+                    X2: <input name="X2" type="text" placeholder="Add X2" required autocomplete="off" pattern="[1-9][0-9]*(\.[0-9]+)?">
+                </li>
+                <li> 
+                    Y2: <input name="Y2" type="text" placeholder="Add Y2" required autocomplete="off" pattern="[1-9][0-9]*(\.[0-9]+)?">
+                </li>
+                <li id = "hassub"> 
+                    <input id = "Sub" type="submit" value="Submit">
+                </li>
+                <li id = "dis" class="animated-li">
+                    Distance between points:  
+                </li>
+            </form>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('Sub').value = 'Calculate Distance';
+    </script>
+</body>
+</html> 
