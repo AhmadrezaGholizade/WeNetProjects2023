@@ -1,0 +1,9 @@
+img {
+    filter: grayscale(100); /* Initial state: full color */
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Change the filter to grayscale on hover */
+img:hover {
+    filter: grayscale(0); /* Grayscale on hover */
+}
