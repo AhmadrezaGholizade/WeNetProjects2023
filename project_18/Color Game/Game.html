@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- driver.js -->
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
+
+    <title>RGB Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Great 
+        <br>
+        <span id = "rgb">RGB</span> 
+        <br>
+        Color Game
+    </h1>
+
+    <div id = "stripe">
+        <button id="reset">New Colors</button>
+        <span id = "message"></span>
+        <span id = "Level">
+            <button id="easy">Easy</button>
+            <button id="hard" class="selected">Hard</button>
+        </span>
+    </div>
+
+    <div id = "container">
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+        <div class = "square"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- <script type="module" src="myDriver.js"></script> -->
+    <script src="myDriver.js"></script>
+</body>
+</html>
