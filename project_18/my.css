@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(218, 102, 0);
+    font-family: 'Silkscreen', sans-serif;
+    color: white;
+}
+
+#box {
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 80px;
+    height: 400px;
+}
+
+#cat{
+    margin-top: 50px;
+    height: 300px;
+}
+
+form{
+    text-align: left;
+    margin-top: 110px;
+    /* width: ; */
+}
+
+.form-label{
+    font-size:x-large;
+}
+
+#Guide {
+    font-size: small;
+}
+
+#warn{
+    background-color: white;
+    color: red;
+}
+
+#img{
+    margin-top: 100px;
+}
+
+#img img{
+    width: 100%;
+}
+
+/* .col{
+    height: 300px;
+    background-color: red;
+} */
